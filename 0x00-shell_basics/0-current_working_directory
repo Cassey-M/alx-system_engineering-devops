@@ -1,1 +1,2 @@
-Current Working Directory: $cwd
+#!/bin/bash
+$pwd
