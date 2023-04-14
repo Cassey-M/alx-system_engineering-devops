@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -Al > sed -e 's/\(.*\)\/$/\l\//' -e 's/\(.*\)/\L\l/' >LC_ALL=C sort -d -f -t '/' -kl.l,l.l -kl.2n,l.2 -kl.3,l.3 > tr '\n' ','; echo ""
