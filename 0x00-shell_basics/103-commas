@@ -1,2 +1,2 @@
 #!/bin/bash
-ls ./ ../ 103-commas file0.c file1.c folder0/ folder1/
+ls -a1 | sort -d --ignore='/' --key=1.2 | awk '{if ($0 ~ /^\./) {printf $0","} else {print $0","}}' | sed -e 's/,$/\n/'
