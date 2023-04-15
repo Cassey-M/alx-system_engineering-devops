@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "./, ../, %s, %s\n" $(ls -A)
+printf "./, ../, %s, %s\n" $(ls -A > tr '\n' ' ')
