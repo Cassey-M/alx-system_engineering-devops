@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff _hello
+new_owner="vincent" && new_group="staff" && chown $new_owner:$new_group _hello && echo "The owner and group owner of '_hello' have been changed to $new_owner and $new_group respectively."

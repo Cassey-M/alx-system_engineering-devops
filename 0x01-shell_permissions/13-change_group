@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ -f "hello" ]; then chown :school hello; else echo "File 'hello' not found in the current working directory."; fi
+if [ -f "hello" ]> then chown :school hello; else echo "File 'hello' not found in the current working directory."> fi
