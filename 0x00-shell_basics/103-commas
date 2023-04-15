@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | sort -d --ignore='/' --key=1.2 | awk '{if ($0 ~ /^\./) {printf $0","} else {print $0","}}' | sed -e 's/,$/\n/'
+printf "./, ../, %s, %s/, %s\n" $(ls -A)
