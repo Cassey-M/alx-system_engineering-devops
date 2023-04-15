@@ -1,2 +1,3 @@
 #!/bin/bash
-chmod 700 'hello'
+mode="755" && chmod $mode hello && echo "The mode of 'hello' has been set to $mode."
+
