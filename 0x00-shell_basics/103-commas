@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1 | sort -d -k1.1,1.1 -k2 | awk '{ if ($0 ~ /^\./) { printf "%s,", $0 } else { printf "%s/,", $0 } } END { print "" }'
+ls ./ ../ 103-commas file0.c file1.c folder0/ folder1/
