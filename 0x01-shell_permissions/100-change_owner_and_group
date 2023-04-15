@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -maxdepth 1 -type f -exec chown vincent:staff {} + ; find . -maxdepth 1 -type d -exec chown vincent:staff {} +
