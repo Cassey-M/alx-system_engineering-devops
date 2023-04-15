@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "./, ../, %s, %s/, %s\n" $(ls -A) sort
+printf "./, ../, %s, %s\n" $(ls -A)
