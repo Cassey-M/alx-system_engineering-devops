@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^[0-9a-zA-Z.]' | sed -E -e 's/(.\/|..\/)//g' -e 's/^(.)/\1,/g' -e 's/(\/$)/\//g' | sort | tr -d '\n' | sed 's/$/\n/'
+ls -a1 --group-directories-first | sed 's/\(.*\)/\1\//' | tr '\n' ',' | sed 's/,$/\n/'
