@@ -1,2 +1,2 @@
 #!/bin/bash
-mode="755" && chmod $mode hello && echo "The mode of 'hello' has been set to $mode."
+mode="755" chmod $mode hello
