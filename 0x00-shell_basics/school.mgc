@@ -1,2 +1,2 @@
 #!/bin/bash
-file -m school.mgc <0x00-shell_basics>
+grep -q -m 1 -s -b '^SCHOOL' school.mgc
