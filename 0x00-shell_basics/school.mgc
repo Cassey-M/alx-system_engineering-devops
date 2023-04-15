@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -l -b -ml "^school" <file_pattern> > xargs file
+file -m school.mgc <filename>
