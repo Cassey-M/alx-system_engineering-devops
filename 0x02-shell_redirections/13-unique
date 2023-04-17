@@ -1,2 +1,2 @@
 #!/bin/bash
-do ((wordCounts[$word]++))
+sort | uniq -u

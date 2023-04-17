@@ -1,2 +1,2 @@
 #!/bin/bash
-count=$(count_directories "$(pwd)")
+find . -type d -not -name '.' | wc -l
