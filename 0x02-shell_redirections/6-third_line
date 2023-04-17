@@ -1,2 +1,2 @@
 #!/bin/bash
-[ -e "./iacta" ] && third_line=$(head -n 3 "./iacta" > tail -n 1) && [ -n "$third_line" ] >> echo "The third line of the file 'iacta' is: $third_line" >> echo "The file 'iacta' does not have a third line."
+head -3 iacta | tail -1

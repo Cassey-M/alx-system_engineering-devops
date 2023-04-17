@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter list of words: " words; declare -A wordCounts; for word in $words; do ((wordCounts[$word]++)); done; for word in "${!wordCounts[@]}"; do if ((wordCounts[$word] == 1)); then echo "$word"; fi; done | sort
+do ((wordCounts[$word]++))

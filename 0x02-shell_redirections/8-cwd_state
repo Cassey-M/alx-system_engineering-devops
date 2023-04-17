@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la > ls_cwd_content ; echo "ls -la output has been written to ls_cwd_content file." > /dev/null
+echo "$output" > ls_cwd_content

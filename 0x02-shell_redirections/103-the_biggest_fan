@@ -1,2 +1,2 @@
 #!/bin/bash
-while read -r line; do IFS=$'\t' read -ra fields <<< "$line"; host_or_ip="${fields[1]}"; ((count["$host_or_ip"]++)); done < /dev/stdin; for host_or_ip in "${!count[@]}"; do echo "${count[$host_or_ip]} $host_or_ip"; done | sort -rn | head -n 11
+IFS=$'\t' echo "${count[$host_or_ip]} $host_or_ip"
