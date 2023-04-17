@@ -1,0 +1,2 @@
+#!/bin/bash
+find "$(pwd)" -type f -name "*.js" -exec rm {} \; -printf "Deleted file: %p\n" 2>/dev/null

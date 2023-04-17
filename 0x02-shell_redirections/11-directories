@@ -1,0 +1,2 @@
+#!/bin/bash
+count=0; for entry in "$(pwd)"/* "$(pwd)"/.[!.]*; do if [ -d "$entry" ] && [ "$entry" != "$(pwd)/." ] && [ "$entry" != "$(pwd)/.." ]; then ((count++)); count=$((count + $(find "$entry" -type d | wc -l))); fi; done; echo "Number of directories (including hidden): $count"

@@ -1,0 +1,2 @@
+#!/bin/bash
+input="input"; echo ${input//[A-Z]/Z} | tr 'c' 'e'
