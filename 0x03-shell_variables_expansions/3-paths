@@ -1,2 +1,2 @@
 #!/bin/bash
-':' read -ra directories <<< "$PATH" | num_directories=${#directories[@]}
+echo $PATH | tr ':' '\n' | wc -l
